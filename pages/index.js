@@ -9,16 +9,16 @@ export default function Home() {
       <h1 className="mx-auto text-center text-xl md:text-3xl">Here will be the portfolio of Robert Burcea</h1>
       <div className="grid sm:grid-cols-2 my-10">
 
-      <div className="w-[200px] grid items-center rounded shadow-lg">
+      <div className="w-[200px] grid items-center rounded shadow-lg hover:scale-[1.1] hover:shadow-2xl">
         <Image className="rounded-lg shadow-lg items-center" src={rb} alt=""/>
       </div>
 
       <div className="">
-          <h1 className="mx-auto text-3xl text-center py-4 my-3 border rounded-lg shadow-lg p-2">Actor/Writer</h1>
-          <h1 className="mx-auto text-3xl text-center py-4 my-3 border rounded-lg shadow-lg p-2">Front End Developer</h1>
-          <h1 className="mx-auto text-3xl text-center py-4 my-3 border rounded-lg shadow-lg p-2">Genius</h1>
+          <h1 className="mx-auto text-3xl text-center py-4 my-3 border rounded-lg shadow-lg p-2 hover:scale-[1.1] hover:bg-slate-100">Actor/Writer</h1>
+          <h1 className="mx-auto text-3xl text-center py-4 my-3 border rounded-lg shadow-lg p-2 hover:scale-[1.1] hover:bg-slate-100">Front End Developer</h1>
+          <h1 className="mx-auto text-3xl text-center py-4 my-3 border rounded-lg shadow-lg p-2 hover:scale-[1.1] hover:bg-slate-100">Genius</h1>
       </div>
-      
+
       </div>
     </div>
   )
