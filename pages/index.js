@@ -6,10 +6,10 @@ import rb from '/pages/rb.jpg'
 export default function Home() {
   return (
     <div className="mx-auto flex flex-col max-w-[1240px] items-center">
-      <h1 className="mx-auto text-center text-xl md:text-3xl">Here will be the portfolio of Robert Burcea</h1>
+      <h1 className="mx-auto text-center text-2xl md:text-5xl pt-4">Robert Burcea</h1>
       <div className="grid sm:grid-cols-2 my-10">
 
-      <div className="w-[200px] grid items-center rounded shadow-lg hover:scale-[1.1] hover:shadow-2xl">
+      <div className="mx-auto w-[200px] grid items-center my-3 rounded shadow-lg hover:scale-[1.1] hover:shadow-2xl">
         <Image className="rounded-lg shadow-lg items-center" src={rb} alt=""/>
       </div>
 
