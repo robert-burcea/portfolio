@@ -5,6 +5,7 @@ import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
+
 function Navbar({options}) {
     const [nav, setNav] = useState(false);
     console.log(options)
@@ -15,15 +16,11 @@ function Navbar({options}) {
             <h1>Robert</h1>
             <div>
             <ul className="hidden md:flex">
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">NAME</li>
-                        </Link>
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">NAME</li>
-                        </Link>
-                        <Link href='/'>
-                            <li className="ml-10 text-sm uppercase hover:border-b">NAME</li>
-                        </Link>
+                {options.map((option, index) => {
+                    return <Link key={index} href={option.url}>
+                    <li className="ml-10 text-sm uppercase hover:border-b">{option.name}</li>
+                </Link>
+                })}
             </ul>
             <div className="md:hidden">
                 <AiOutlineMenu size={25} onClick={() => {setNav(!nav)}}/>

@@ -3,23 +3,23 @@ import Navbar from './developer/components/Navbar'
 import Header from '/pages/landing/Header'
 import Hero from '/pages/landing/Hero'
 
-const NAVBAR__OPTIONS = {
+const NAVBAR_OPTIONS = {
   main: [{
-      name:"Actor",
-      url:"/pages/actor/"
+      name:"Actor/Writer",
+      url:"/actor/"
     },
     {
       name:"Developer",
-      url:"/pages/developer/"
+      url:"/developer/"
     }],
   developer: [
     {
       name:"Skills",
-      url:"/pages/developer/skills/"
+      url:"/developer/skills/"
     },
     {
       name:"Projects",
-      url:"/pages/developer/projects"
+      url:"/developer/projects"
     }
   ],
   actor: [
@@ -33,7 +33,7 @@ export default function Home() {
       <Head>
             <title>Robert Burcea</title>
       </Head>
-      <Navbar options={NAVBAR__OPTIONS.main}/>
+      <Navbar options={NAVBAR_OPTIONS.main}/>
       <Hero />
     </div>
   )

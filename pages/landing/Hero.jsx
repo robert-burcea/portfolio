@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function Hero() {
   return (
-    <div className="flex flex-col sm:flex-row w-[90%] justify-around items-center h-screen">
+    <div className="flex flex-col sm:flex-row w-[90%] justify-around items-center h-screen mt-4">
 
       <div className="w-[200px] sd:w-[250px] md:w-[300px] my-2 rounded shadow-lg hover:scale-[1.1] hover:shadow-2xl">
         <Image className="rounded-lg shadow-lg items-center" src={rb} alt="Robert's Photo"/>
