@@ -5,25 +5,25 @@ import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 
-function Navbar() {
+function Navbar({options}) {
     const [nav, setNav] = useState(false);
+    console.log(options)
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-            <h1>Logo</h1>
+            <h1>Robert</h1>
             <div>
             <ul className="hidden md:flex">
-                <Link href='/'>
-                    <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-                </Link>
-                <Link href='/'>
-                    <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-                </Link>
-                <Link href='/'>
-                    <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
-                </Link>
-
+                        <Link href='/'>
+                            <li className="ml-10 text-sm uppercase hover:border-b">NAME</li>
+                        </Link>
+                        <Link href='/'>
+                            <li className="ml-10 text-sm uppercase hover:border-b">NAME</li>
+                        </Link>
+                        <Link href='/'>
+                            <li className="ml-10 text-sm uppercase hover:border-b">NAME</li>
+                        </Link>
             </ul>
             <div className="md:hidden">
                 <AiOutlineMenu size={25} onClick={() => {setNav(!nav)}}/>
@@ -32,7 +32,7 @@ function Navbar() {
                 <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" : "fixed left-[-100]"}>
                 <div>
                     <div className="flex w-full items-center justify-between">
-                        <h1>Logo</h1>
+                        <h1>Robert</h1>
                         <div className="rounded-full shadow-3xl shadow-black p-3 cursor-pointer">
                             <AiOutlineClose size={25} onClick={() => {setNav(!nav)}} />
                         </div>
