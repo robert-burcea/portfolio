@@ -40,15 +40,11 @@ function Navbar({options}) {
                 </div>
                 <div className="py-4 flex flex-col">
                     <ul className="uppercase">
-                        <Link href="/">
-                            <li className="py-4 text-sm">Home</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4 text-sm">Skills</li>
-                        </Link>
-                        <Link href="/">
-                            <li className="py-4 text-sm">Projects</li>
-                        </Link>
+                        {options.map((option,index) => {
+                            return <Link key={index} href={option.url}>
+                             <li className="py-4 text-sm">{option.name}</li>
+                            </Link>
+                        })}
                     </ul>
                     <div className="pt-40">
                         <p className="uppercase tracking-widest text-[#5651e5]">Let&rsquo;s Connect</p>  
