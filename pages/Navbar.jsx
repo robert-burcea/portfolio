@@ -16,7 +16,7 @@ function Navbar({options}) {
             <h1>Robert</h1>
             <div>
             <ul className="hidden md:flex">
-                {options.map((option, index) => {
+                {options?.map((option, index) => {
                     return <Link key={index} href={option.url}>
                     <li className="ml-10 text-sm uppercase hover:border-b">{option.name}</li>
                 </Link>
@@ -40,7 +40,7 @@ function Navbar({options}) {
                 </div>
                 <div className="py-4 flex flex-col">
                     <ul className="uppercase">
-                        {options.map((option,index) => {
+                        {options?.map((option,index) => {
                             return <Link key={index} href={option.url}>
                              <li className="py-4 text-sm">{option.name}</li>
                             </Link>
