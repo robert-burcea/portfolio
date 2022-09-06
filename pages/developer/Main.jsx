@@ -18,7 +18,7 @@ function Main() {
                     A Front-End Web Developer
                 </h1>
                 <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-                    I&rsquo; a noob Front-End Web developer, but I&rsquo;m super smart and I learn pretty fast!
+                    I&rsquo;m a noob Front-End Web developer, but I&rsquo;m super smart and I learn pretty fast!
                     As fast as I can type.
                 </p>
                 <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
