@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from '../Navbar'
 import Main from '/pages/developer/Main'
+import About from './About'
 
 const NAVBAR_OPTIONS = {
     main: [{
@@ -50,6 +51,7 @@ function index() {
         </Head>
         <Navbar options={NAVBAR_OPTIONS.developer}/>
         <Main />
+        <About />
 
     </div>
   )
