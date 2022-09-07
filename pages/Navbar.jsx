@@ -11,7 +11,7 @@ function Navbar({options}) {
     console.log(options)
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] mb-3">
+    <div className="fixed w-full h-20 shadow-xl z-[100]">
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
             <h1>Robert</h1>
             <div>
