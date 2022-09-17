@@ -5,6 +5,7 @@ import ProjectItem from './ProjectItem'
 import data from '/public/assets/projects/data-react-landing.png'
 import pixabay from '/public/assets/projects/pixabay-react-search.png'
 import whatsapp from '/public/assets/projects/whats-app-clone.png'
+import mlrestaurant from '/public/assets/projects/ml-restaurant.png'
 
 
 const Projects = () => {
@@ -28,6 +29,11 @@ const Projects = () => {
                 <ProjectItem 
                 image={whatsapp} 
                 name="Whatsapp Clone WebApp" 
+                tools="React JS Firebase" 
+                link="" />
+                <ProjectItem 
+                image={mlrestaurant} 
+                name="Regression Algorithm App" 
                 tools="React JS Firebase" 
                 link="" />
 

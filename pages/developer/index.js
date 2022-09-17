@@ -5,6 +5,7 @@ import Main from '/pages/developer/Main'
 import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
+import Contact from './Contact'
 
 const NAVBAR_OPTIONS = {
     main: [{
@@ -56,6 +57,7 @@ function index() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
 
     </div>
   )
